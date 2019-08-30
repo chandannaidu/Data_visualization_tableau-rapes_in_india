@@ -1,0 +1,1238 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0624.1646                               -->
+<workbook include-phone-layouts='false' original-version='18.1' source-build='2019.2.1 (20192.19.0621.1547)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <IncludePhoneLayoutsOptOut ignorable='true' predowngraded='true' />
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia?rev=1.0' id='RapesinIndia' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='20_Victims_of_rape' inline='true' name='federated.1wc9dr914mazh41b2rfcv1g77jtn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='20_Victims_of_rape' name='textscan.1sd0de3133pupw162seud1va1k59'>
+            <connection class='textscan' directory='C:/Users/ChandhaN/Documents/My Tableau Repository/Datasources' filename='20_Victims_of_rape.csv' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1sd0de3133pupw162seud1va1k59' name='20_Victims_of_rape.csv' table='[20_Victims_of_rape#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator='&#9;'>
+            <column datatype='string' name='Area_Name' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='string' name='Subgroup' ordinal='2' />
+            <column datatype='integer' name='Rape_Cases_Reported' ordinal='3' />
+            <column datatype='integer' name='Victims_Above_50_Yrs' ordinal='4' />
+            <column datatype='integer' name='Victims_Between_10-14_Yrs' ordinal='5' />
+            <column datatype='integer' name='Victims_Between_14-18_Yrs' ordinal='6' />
+            <column datatype='integer' name='Victims_Between_18-30_Yrs' ordinal='7' />
+            <column datatype='integer' name='Victims_Between_30-50_Yrs' ordinal='8' />
+            <column datatype='integer' name='Victims_of_Rape_Total' ordinal='9' />
+            <column datatype='integer' name='Victims_Upto_10_Yrs' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Area_Name]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Area_Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Subgroup</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Subgroup]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Subgroup</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rape_Cases_Reported</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rape_Cases_Reported]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Rape_Cases_Reported</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Above_50_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Above_50_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Above_50_Yrs</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Between_10-14_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Between_10-14_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Between_10-14_Yrs</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Between_14-18_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Between_14-18_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Between_14-18_Yrs</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Between_18-30_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Between_18-30_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Between_18-30_Yrs</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Between_30-50_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Between_30-50_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Between_30-50_Yrs</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_of_Rape_Total</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_of_Rape_Total]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_of_Rape_Total</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victims_Upto_10_Yrs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victims_Upto_10_Yrs]</local-name>
+            <parent-name>[20_Victims_of_rape.csv]</parent-name>
+            <remote-alias>Victims_Upto_10_Yrs</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='State' datatype='string' name='[Area_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Rape Cases Reported' datatype='integer' name='[Rape_Cases_Reported]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Subgroup]' role='dimension' type='nominal' />
+      <column caption='Victims Above 50 Yrs' datatype='integer' name='[Victims_Above_50_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims Between 10-14 Yrs' datatype='integer' name='[Victims_Between_10-14_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims Between 14-18 Yrs' datatype='integer' name='[Victims_Between_14-18_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims Between 18-30 Yrs' datatype='integer' name='[Victims_Between_18-30_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims Between 30-50 Yrs' datatype='integer' name='[Victims_Between_30-50_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims Upto 10 Yrs' datatype='integer' name='[Victims_Upto_10_Yrs]' role='measure' type='quantitative' />
+      <column caption='Victims of Rape Total' datatype='integer' name='[Victims_of_Rape_Total]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column-instance column='[Area_Name]' derivation='None' name='[none:Area_Name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (State)' hidden='true' name='[Action (State)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Area_Name]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Subgroup,Year)' hidden='true' name='[Action (Subgroup,Year)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Subgroup]' />
+          <groupfilter function='level-members' level='[none:Year:ok]' />
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_17fz0681jk7n6y186kr431uu1xss.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/03/2019 03:14:23 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Area_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Area_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area_Name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Subgroup</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Subgroup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Subgroup</remote-alias>
+              <ordinal>2</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rape_Cases_Reported</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rape_Cases_Reported]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rape_Cases_Reported</remote-alias>
+              <ordinal>3</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>263</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Above_50_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Above_50_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Above_50_Yrs</remote-alias>
+              <ordinal>4</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Between_10-14_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Between_10-14_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Between_10-14_Yrs</remote-alias>
+              <ordinal>5</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Between_14-18_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Between_14-18_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Between_14-18_Yrs</remote-alias>
+              <ordinal>6</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>140</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Between_18-30_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Between_18-30_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Between_18-30_Yrs</remote-alias>
+              <ordinal>7</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>240</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Between_30-50_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Between_30-50_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Between_30-50_Yrs</remote-alias>
+              <ordinal>8</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_of_Rape_Total</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_of_Rape_Total]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_of_Rape_Total</remote-alias>
+              <ordinal>9</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>263</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victims_Upto_10_Yrs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victims_Upto_10_Yrs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victims_Upto_10_Yrs</remote-alias>
+              <ordinal>10</ordinal>
+              <family>20_Victims_of_rape.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>71</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.325726' measure-ordering='alphabetic' measure-percentage='0.674274' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Area_Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Daman &amp; Diu&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Andaman &amp; Nicobar Islands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Maharashtra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bihar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nagaland&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Haryana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Uttar Pradesh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Delhi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sikkim&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Odisha&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lakshadweep&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Andhra Pradesh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Manipur&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Karnataka&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Chhattisgarh&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Puducherry&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Himachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Uttarakhand&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jammu &amp; Kashmir&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;West Bengal&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kerala&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Madhya Pradesh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tamil Nadu&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dadra &amp; Nagar Haveli&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Punjab&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Meghalaya&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jharkhand&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gujarat&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tripura&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Assam&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mizoram&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter1' name='[Action1]'>
+      <activation auto-clear='true' />
+      <source datasource='federated.1wc9dr914mazh41b2rfcv1g77jtn' type='datasource' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Rap victims from different states of India from 2001 - 2010' />
+      </command>
+    </action>
+    <action caption='Filter 1 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Rap victims from different states of India from 2001 - 2010' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Causes of rape'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='9'>Causes of rape</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia/Causesofrape?rev=' id='Causesofrape' path='/workbooks/RapesinIndia' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20_Victims_of_rape' name='federated.1wc9dr914mazh41b2rfcv1g77jtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wc9dr914mazh41b2rfcv1g77jtn'>
+            <column caption='State' datatype='string' name='[Area_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Rape Cases Reported' datatype='integer' name='[Rape_Cases_Reported]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Subgroup]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Area_Name]' derivation='None' name='[none:Area_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Subgroup]' derivation='None' name='[none:Subgroup:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rape_Cases_Reported]' derivation='Sum' name='[sum:Rape_Cases_Reported:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+            <groupfilter function='level-members' level='[Area_Name]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Area_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</column>
+            <column>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='#000000' />
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='bold' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='bold' />
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' max='24' min='0' num-steps='4' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.50475138425827026' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</rows>
+        <cols>([federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Subgroup:nk] * [federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk])</cols>
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{54AF2F69-3233-47EA-8342-A4E6B0DA6978}' />
+    </worksheet>
+    <worksheet name='Rap cases reported from 2001 to 2010'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='8'>Rap cases reported from 2001 to 2010</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia/Rapcasesreportedfrom2001to2010?rev=' id='Rapcasesreportedfrom2001to2010' path='/workbooks/RapesinIndia' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20_Victims_of_rape' name='federated.1wc9dr914mazh41b2rfcv1g77jtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wc9dr914mazh41b2rfcv1g77jtn'>
+            <column caption='State' datatype='string' name='[Area_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Rape Cases Reported' datatype='integer' name='[Rape_Cases_Reported]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Area_Name]' derivation='None' name='[none:Area_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Rape_Cases_Reported]' derivation='Sum' name='[sum:Rape_Cases_Reported:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+            <groupfilter function='level-members' level='[Area_Name]' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Area_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</column>
+            <column>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='#000000' />
+            <format attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='10' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]' value='bold' />
+            <format attr='font-size' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='10' />
+            <format attr='font-weight' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' num-steps='6' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</rows>
+        <cols>([federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk] * [federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk])</cols>
+        <tooltip-style tooltip-mode='none' />
+      </table>
+      <simple-id uuid='{EB57A413-DAEE-4D0F-B4CB-D06E605DFAFA}' />
+    </worksheet>
+    <worksheet name='Rap victims from different states of India from 2001 - 2010'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='8'>Rap victims from different states of India from 2001 - 2010</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia/RapvictimsfromdifferentstatesofIndiafrom2001-2010?rev=' id='RapvictimsfromdifferentstatesofIndiafrom2001-2010' path='/workbooks/RapesinIndia' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='20_Victims_of_rape' name='federated.1wc9dr914mazh41b2rfcv1g77jtn' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1wc9dr914mazh41b2rfcv1g77jtn'>
+            <column caption='State' datatype='string' name='[Area_Name]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Rape Cases Reported' datatype='integer' name='[Rape_Cases_Reported]' role='measure' type='quantitative' />
+            <column-instance column='[Area_Name]' derivation='None' name='[none:Area_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Rape_Cases_Reported]' derivation='Sum' name='[sum:Rape_Cases_Reported:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]'>
+            <groupfilter function='level-members' level='[none:Area_Name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]' field-type='quantitative' max='12877625.485494509' min='6465288.1279127682' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]' field-type='quantitative' max='4972586.3798558898' min='259244.28925428732' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]' />
+              <text column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' />
+              <lod column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]' />
+              <geometry column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='258' />
+                <format attr='maxheight' value='258' />
+                <format attr='minwidth' value='351' />
+                <format attr='maxwidth' value='351' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</rows>
+        <cols>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='106'>
+            <formatted-text>
+              <run bold='true'>Telanagana was part of AndraPradesh(2001 - 2010)</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='8785421.587778531'>
+                  <node-reference>
+                    <axis>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1976508.4617990563'>
+                  <node-reference>
+                    <axis>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='78.920784897350487' v='17.477740245807912' />
+              </visual-coordinate>
+            </point>
+            <body x='151' y='2' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{D8385A61-375B-4B16-B5F1-ECA3E038A963}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia/Dashboard1?rev=' id='Dashboard1' path='/workbooks/RapesinIndia' revision='' />
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97302' id='8' param='horz' type='layout-flow' w='97538' x='1231' y='1349'>
+            <zone h='97302' id='5' param='horz' type='layout-flow' w='56000' x='1231' y='1349'>
+              <zone h='97302' id='3' type='layout-basic' w='56000' x='1231' y='1349'>
+                <zone h='50590' id='1' name='Rap victims from different states of India from 2001 - 2010' w='56000' x='1231' y='1349'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46712' id='6' name='Rap cases reported from 2001 to 2010' w='56000' x='1231' y='51939'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='270' h='97302' id='12' is-fixed='true' type='layout-basic' w='41538' x='57231' y='1349'>
+              <zone h='97302' id='15' type='layout-basic' w='41538' x='57231' y='1349'>
+                <zone h='50590' id='13' param='vert' type='layout-flow' w='41538' x='57231' y='1349'>
+                  <zone fixed-size='312' h='50590' id='14' is-fixed='true' param='vert' type='layout-flow' w='41538' x='57231' y='1349'>
+                    <zone h='3035' id='17' type='text' w='41538' x='57231' y='1349'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone h='46712' id='16' param='vert' type='layout-flow' w='41538' x='57231' y='51939'>
+                  <zone h='46712' id='11' name='Causes of rape' w='41538' x='57231' y='51939'>
+                    <layout-cache minheight='228' minwidth='261' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{A2A74AD9-0DC3-4E4B-9044-D1D166B2BF7F}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/RapesinIndia/Story1?rev=' id='Story1' path='/workbooks/RapesinIndia' revision='' />
+      <style>
+        <style-rule element='story-description'>
+          <format attr='font-style' id='story-description_7' value='normal' />
+          <format attr='font-weight' id='story-description_7' value='normal' />
+          <format attr='text-decoration' id='story-description_7' value='none' />
+          <format attr='font-style' id='story-description_8' value='normal' />
+          <format attr='font-weight' id='story-description_8' value='normal' />
+          <format attr='text-decoration' id='story-description_8' value='none' />
+          <format attr='font-style' id='story-description_9' value='normal' />
+          <format attr='font-weight' id='story-description_9' value='normal' />
+          <format attr='text-decoration' id='story-description_9' value='none' />
+          <format attr='font-style' id='story-description_10' value='normal' />
+          <format attr='font-weight' id='story-description_10' value='normal' />
+          <format attr='text-decoration' id='story-description_10' value='none' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='5' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='preview of report(Rapes in India)' captured-sheet='Dashboard 1' id='1' />
+                  <story-point caption='Maharasthra holds highest record of victimes' captured-sheet='Dashboard 1' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='Causes of rape'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Madhya Pradesh&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap cases reported from 2001 to 2010'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Madhya Pradesh&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap victims from different states of India from 2001 - 2010'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]' field-type='quantitative' max='3976766.8139444208' min='546041.21658002981' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]' field-type='quantitative' max='11654500.123870403' min='6987117.7254110305' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Geometry (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>&quot;Madhya Pradesh&quot;</value>
+                                <value>29256</value>
+                                <value>&quot;POLYGON((74.1434 21.9551,74.149 21.9877,74.0933 22.0101,74.1163 22.0325,74.1576 22.0559,74.1703 22.0955,74.1351 22.0947,74.124 22.1305,74.1175 22.211,74.0752 22.219,74.0717 22.2529,74.056 22.2841,74.0668 22.3585,74.108 22.3709,74.1297 22.3309,74.1878 22.3199,74.2028 22.3653,74.2706 22.3913,74.2573 22.4263,74.2333 22.4384,74.1839 22.4439,74.1512 22.4377,74.1366 22.452,74.119 22.4189,74.1009 22.4319,74.1009 22.4642,74.073 22.4643,74.0811 22.5075,74.0548 22.5094,74.0405 22.5412,74.0629 22.549,74.1117 22.538,74.1314 22.517,74.2115 22.5671,74.2536 22.6323,74.2812 22.6443,74.3151 22.6349,74.3811 22.6392,74.3819 22.6684,74.3942 22.6897,74.4011 22.7303,74.4369 22.7829,74.4381 22.8078,74.4636 22.813,74.4766 22.8571,74.4606 22.9113,74.4494 22.9217,74.415 22.9155,74.3982 22.8979,74.3793 22.9075,74.339 22.9622,74.3668 22.9817,74.3443 23.0302,74.3203 23.0604,74.3459 23.0687,74.3889 23.11,74.4307 23.1039,74.4657 23.0833,74.5105 23.0871,74.5346 23.1004,74.5441 23.1295,74.6066 23.1426,74.6538 23.1796,74.6668 23.1991,74.7197 23.1936,74.7213 23.2397,74.7002 23.2693,74.6791 23.2733,74.6514 23.2583,74.6196 23.2791,74.5855 23.2818,74.5663 23.2968,74.5465 23.2847,74.5319 23.3208,74.5441 23.3616,74.5708 23.3811,74.5712 23.4173,74.5988 23.4284,74.6086 23.4552,74.6514 23.4606,74.6682 23.4814,74.7088 23.503,74.7335 23.4979,74.7634 23.5216,74.7736 23.5417,74.8026 23.5314,74.8505 23.5541,74.874 23.5764,74.8849 23.6043,74.9047 23.6204,74.9375 23.6277,74.9085 23.6845,74.94 23.7312,74.94 23.7628,74.927 23.7955,74.9102 23.7993,74.9152 23.8418,74.9047 23.8657,74.9148 23.9107,74.9413 23.9573,74.9686 23.9758,74.9879 24.0111,74.9799 24.0683,74.9602 24.107,74.9396 24.117,74.9274 24.1544,74.9009 24.1721,74.8795 24.2145,74.9064 24.2301,74.8929 24.2607,74.8161 24.2747,74.7752 24.2695,74.7488 24.2876,74.7851 24.3162,74.7847 24.3692,74.8146 24.4163,74.858 24.4593,74.855 24.4759,74.8153 24.4577,74.8161 24.4888,74.7753 24.4816,74.7262 24.5078,74.758 24.552,74.7472 24.5951,74.7885 24.6082,74.7843 24.6322,74.8035 24.6543,74.8137 24.6837,74.7766 24.6855,74.7831 24.7423,74.8011 24.7489,74.8137 24.789,74.8352 24.7316,74.8747 24.6639,74.9448 24.6579,74.9633 24.6956,75.0004 24.7052,74.9945 24.7489,75.0208 24.7507,75.0142 24.7908,74.9112 24.7848,74.8592 24.816,74.8568 24.8511,74.8267 24.8973,74.8241 24.9373,74.8345 24.9663,74.8646 24.9612,74.8678 24.9357,74.9015 24.9367,74.9114 24.8957,74.9519 24.889,74.9477 24.8744,75.0116 24.8708,75.0454 24.8562,75.0734 24.8843,75.0937 24.8765,75.1207 24.8853,75.1165 24.9591,75.1674 24.9876,75.1737 25.0484,75.2583 25.0359,75.2786 25.0411,75.3399 25.037,75.3254 25.0119,75.3241 24.9795,75.3397 24.9594,75.3195 24.9039,75.2808 24.9745,75.2692 24.9619,75.28 24.9115,75.264 24.8858,75.3132 24.8669,75.3283 24.8841,75.3749 24.8751,75.4099 24.8892,75.4199 24.865,75.3993 24.8505,75.3023 24.8118,75.2763 24.8526,75.2426 24.8576,75.2523 24.893,75.2231 24.9006,75.2025 24.8825,75.251 24.8211,75.2182 24.8177,75.193 24.7845,75.1968 24.7572,75.225 24.7312,75.2687 24.7295,75.3048 24.7181,75.4532 24.6895,75.4868 24.6946,75.5339 24.7139,75.5839 24.7189,75.6154 24.6844,75.662 24.6987,75.6822 24.7239,75.744 24.7567,75.7898 24.7617,75.8195 24.7308,75.8359 24.6999,75.8266 24.6667,75.8459 24.66,75.8357 24.6024,75.8719 24.6046,75.8793 24.5817,75.9152 24.5696,75.9033 24.5467,75.9242 24.5356,75.9133 24.5149,75.9015 24.4412,75.8359 24.4133,75.8121 24.4319,75.8156 24.4563,75.7836 24.4506,75.7486 24.4223,75.7338 24.3986,75.7444 24.3409,75.7699 24.2949,75.8137 24.2913,75.8171 24.2367,75.8077 24.217,75.771 24.2013,75.7727 24.1832,75.7536 24.1479,75.769 24.1165,75.7949 24.0899,75.8381 24.092,75.8378 24.0574,75.7842 24.044,75.784 24.0202,75.765 23.9933,75.7363 23.9755,75.7035 23.9677,75.7011 23.9862,75.6724 24.0175,75.6313 23.9948,75.5875 23.9901,75.5647 24.008,75.5218 24.0245,75.4681 23.9714,75.4599 23.9195,75.4896 23.9076,75.5611 23.8587,75.5598 23.8162,75.5827 23.7928,75.6189 23.7976,75.6538 23.7928,75.6753 23.7782,75.7015 23.7852,75.6924 23.8104,75.7267 23.8183,75.7332 23.8613,75.7025 23.874,75.7094 23.8969,75.7539 23.8824,75.7646 23.8489,75.7983 23.8654,75.8768 23.8776,75.937 23.8953,75.9557 23.9212,75.9819 23.9299,75.9845 23.9745,75.9664 23.9911,75.9792 24.0148,76.018 24.0328,76.037 24.063,76.0752 24.0705,76.1042 24.0878,76.1224 24.0847,76.1316 24.1142,76.1159 24.1675,76.121 24.1968,76.1453 24.2219,76.1385 24.2726,76.1635 24.2865,76.1881 24.3263,76.2038 24.2981,76.2038 24.2188,76.2417 24.2188,76.2831 24.2083,76.2915 24.2312,76.3211 24.2455,76.3552 24.2398,76.4027 24.2134,76.4292 24.222,76.4504 24.2097,76.4794 24.2102,76.5087 24.1966,76.5158 24.1628,76.553 24.1621,76.5755 24.1848,76.5698 24.2063,76.5951 24.2206,76.5951 24.2448,76.6424 24.2673,76.6927 24.2668,76.6924 24.2336,76.6768 24.1941,76.7001 24.1664,76.7214 24.1567,76.7598 24.167,76.8006 24.1164,76.8687 24.1354,76.9041 24.1293,76.9171 24.1885,76.9459 24.2041,76.9001 24.2381,76.8654 24.2745,76.8603 24.3008,76.8401 24.3299,76.8515 24.3677,76.8375 24.4111,76.853 24.4662,76.828 24.5027,76.8163 24.5341,76.8631 24.5482,76.873 24.5266,76.9124 24.5439,76.9219 24.5205,76.918 24.4794,76.9425 24.4642,76.979 24.4625,77.0054 24.4728,77.0552 24.5253,77.0709 24.5678,77.0644 24.6453,77.0296 24.7135,76.9987 24.719,76.9581 24.7595,76.9079 24.7312,76.8893 24.7478,76.8571 24.7423,76.8492 24.7647,76.803 24.8196,76.8312 24.8369,76.8993 24.8383,76.9262 24.8469,76.9467 24.8681,76.9109 24.8842,76.921 24.9074,76.8904 24.9163,76.8616 24.9641,76.8624 25.0015,76.8804 25.0114,76.8823 25.0409,76.9459 25.0468,76.9754 25.0674,77.0097 25.0735,77.0779 25.0552,77.1202 25.0638,77.133 25.0859,77.168 25.0843,77.1759 25.1098,77.2265 25.1057,77.2627 25.1145,77.289 25.1057,77.3108 25.0799,77.3672 25.0952,77.3966 25.1268,77.3994 25.1814,77.4259 25.1901,77.4128 25.2232,77.3737 25.2494,77.3654 25.2679,77.3839 25.2906,77.3646 25.3651,77.356 25.3764,77.3712 25.4093,77.3099 25.4308,77.2289 25.3681,77.2245 25.3211,77.1877 25.309,77.1579 25.3121,77.1272 25.3301,77.0839 25.337,77.0659 25.3177,77.047 25.3223,77.0306 25.2957,76.9836 25.2999,76.9551 25.2809,76.8749 25.341,76.8375 25.325,76.7777 25.3153,76.7294 25.3284,76.7131 25.346,76.6694 25.3485,76.6374 25.3841,76.5996 25.3921,76.5911 25.4253,76.556 25.4526,76.5551 25.4828,76.5165 25.5292,76.5196 25.5485,76.5055 25.575,76.5103 25.6314,76.5039 25.6672,76.4833 25.6819,76.4759 25.7129,76.5263 25.7399,76.5159 25.7761,76.5328 25.8153,76.5566 25.8347,76.5827 25.871,76.6189 25.8689,76.6403 25.9071,76.68 25.9085,76.7126 25.8996,76.7567 25.9197,76.7546 25.9404,76.7945 25.9444,76.8073 25.9648,76.8046 25.9896,76.8499 26.0297,76.8886 26.0487,76.9127 26.0955,76.9512 26.1017,77.0001 26.1292,77.026 26.1674,77.0483 26.1765,77.0924 26.1791,77.1353 26.2315,77.179 26.2372,77.2088 26.2288,77.2935 26.2828,77.3135 26.3043,77.3236 26.3334,77.3742 26.3662,77.3912 26.3564,77.4486 26.3675,77.4343 26.3955,77.4868 26.4104,77.5317 26.4091,77.5575 26.4347,77.6215 26.4591,77.6321 26.4782,77.6779 26.5045,77.7177 26.4978,77.7372 26.5118,77.7435 26.5349,77.7803 26.5514,77.8194 26.5474,77.8316 26.5586,77.8273 26.5932,77.8527 26.6127,77.893 26.6146,77.8981 26.6527,77.9143 26.6611,77.9503 26.6586,77.9854 26.6746,77.9992 26.6946,78.0557 26.6847,78.0741 26.671,78.0967 26.6814,78.0909 26.7292,78.1209 26.7461,78.1031 26.7656,78.104 26.7879,78.1305 26.796,78.155 26.7849,78.187 26.7928,78.1786 26.8269,78.2197 26.8297,78.2714 26.8154,78.2734 26.8427,78.3047 26.8625,78.354 26.868,78.3724 26.8623,78.3927 26.823,78.4277 26.8249,78.4572 26.7905,78.516 26.7811,78.5736 26.7496,78.6105 26.7505,78.6288 26.7735,78.6681 26.7623,78.6859 26.7896,78.7234 26.7967,78.7614 26.782,78.7768 26.7586,78.8083 26.7635,78.8641 26.7001,78.9122 26.7071,79.0085 26.6643,78.9934 26.6415,79.0138 26.6023,78.9862 26.5875,79.0043 26.5507,79.0402 26.5304,79.0414 26.5139,79.0668 26.4978,79.0568 26.4505,79.0888 26.4396,79.0997 26.4529,79.1329 26.4402,79.1564 26.4202,79.1753 26.3822,79.1259 26.321,79.116 26.2976,79.086 26.2619,79.0865 26.2271,79.0242 26.2207,79.0113 26.1672,78.9919 26.1454,78.959 26.1333,79.0121 26.0833,78.9936 26.0516,78.9543 26.0333,78.956 25.9951,78.9398 25.9541,78.8997 25.9191,78.8899 25.8912,78.855 25.8607,78.8719 25.8319,78.8711 25.804,78.8466 25.8008,78.8227 25.829,78.7835 25.7601,78.753 25.7506,78.7559 25.7302,78.801 25.7053,78.8198 25.6534,78.8112 25.6187,78.7662 25.6111,78.7425 25.5963,78.7162 25.6053,78.6798 25.586,78.6578 25.5596,78.6309 25.5647,78.6147 25.5818,78.5878 25.5565,78.5332 25.5692,78.4831 25.5739,78.4523 25.5479,78.4213 25.5404,78.4192 25.5011,78.4295 25.48,78.4042 25.465,78.3952 25.4456,78.3716 25.4379,78.3557 25.4518,78.3312 25.3886,78.2999 25.3621,78.3284 25.3506,78.3406 25.3296,78.3134 25.3014,78.3361 25.2921,78.371 25.258,78.3628 25.2406,78.3988 25.2175,78.39 25.1952,78.4371 25.1629,78.4309 25.1213,78.4007 25.1258,78.3845 25.1031,78.3415 25.0882,78.3353 25.0632,78.3457 25.0115,78.3134 24.986,78.2773 24.942,78.2199 24.9108,78.2084 24.8934,78.1687 24.8682,78.1929 24.8425,78.2359 24.77,78.2295 24.7486,78.2634 24.6992,78.2775 24.6672,78.2664 24.651,78.2789 24.6091,78.2654 24.557,78.2273 24.533,78.2462 24.5099,78.2511 24.4827,78.275 24.4703,78.2656 24.4503,78.2993 24.4291,78.369 24.3738,78.3338 24.3379,78.3477 24.3002,78.3812 24.2801,78.414 24.2727,78.4404 24.2988,78.4448 24.3255,78.474 24.3514,78.4951 24.3853,78.5116 24.3911,78.5543 24.3593,78.5844 24.3535,78.6136 24.3103,78.6601 24.2673,78.6769 24.2374,78.7063 24.2285,78.7338 24.25,78.7435 24.2363,78.7721 24.2534,78.7739 24.2208,78.7873 24.1873,78.8132 24.181,78.8442 24.2118,78.8793 24.2147,78.8839 24.2493,78.9087 24.266,78.9098 24.2972,78.9428 24.3163,78.974 24.3553,78.9702 24.3689,78.9931 24.4235,78.9859 24.4413,78.9495 24.4372,78.9133 24.4753,78.9231 24.5,78.9527 24.5012,78.9454 24.5337,78.8958 24.628,78.8813 24.6408,78.86 24.6184,78.8126 24.6042,78.7837 24.5883,78.7532 24.6039,78.7531 24.6448,78.7816 24.7073,78.7729 24.7305,78.7704 24.7875,78.7856 24.8,78.7695 24.8596,78.6763 24.8983,78.6629 24.9355,78.6331 24.9579,78.6436 24.9871,78.6514 25.0543,78.6319 25.0826,78.6022 25.0951,78.6032 25.1444,78.5712 25.2056,78.566 25.2623,78.498 25.2872,78.466 25.2664,78.438 25.276,78.44 25.2945,78.5301 25.3,78.5602 25.342,78.5843 25.3483,78.5873 25.3878,78.6036 25.4095,78.6281 25.4007,78.6411 25.4278,78.6619 25.4396,78.6986 25.443,78.7082 25.4225,78.665 25.3918,78.7139 25.3712,78.7162 25.3461,78.7695 25.352,78.7713 25.3806,78.7517 25.3916,78.7587 25.4302,78.7325 25.4608,78.7373 25.4949,78.7647 25.4719,78.7883 25.4841,78.82 25.4711,78.845 25.4495,78.8652 25.459,78.8378 25.511,78.8807 25.5155,78.8811 25.5533,78.9471 25.5542,78.9505 25.5337,78.9224 25.5171,78.9387 25.4664,78.9096 25.4427,78.9343 25.427,78.9574 25.4396,78.9758 25.4174,78.9614 25.3693,78.9439 25.3494,78.8722 25.3811,78.8439 25.3486,78.8232 25.3047,78.8144 25.2659,78.8536 25.2323,78.8778 25.2882,78.8672 25.3214,78.8803 25.3419,78.9207 25.3428,78.955 25.3272,78.9706 25.2912,78.9387 25.2616,78.9191 25.273,78.8971 25.2433,78.8914 25.2135,78.8735 25.1849,78.8816 25.1653,78.9071 25.1737,78.934 25.2132,79.006 25.2108,78.9983 25.2335,78.9783 25.2411,78.9934 25.2698,79.0113 25.2707,79.0216 25.243,79.0615 25.2155,79.0378 25.1973,79.0289 25.1409,79.0458 25.1338,79.0676 25.1498,79.0897 25.1846,79.123 25.1608,79.1232 25.115,79.1719 25.1084,79.1861 25.145,79.2125 25.1129,79.2396 25.113,79.2483 25.1401,79.2827 25.1189,79.3091 25.1293,79.3235 25.1502,79.3098 25.1739,79.284 25.1924,79.2849 25.2372,79.3013 25.239,79.3379 25.1986,79.3493 25.2104,79.3489 25.2607,79.2826 25.2625,79.2631 25.2733,79.2683 25.3037,79.3047 25.3352,79.3452 25.3285,79.3379 25.2905,79.3748 25.2682,79.4347 25.2544,79.4452 25.2101,79.417 25.2,79.3918 25.1692,79.3848 25.1432,79.3969 25.1155,79.4438 25.103,79.4678 25.0889,79.5029 25.0844,79.5281 25.1015,79.5261 25.1281,79.5636 25.168,79.5893 25.1484,79.6667 25.1225,79.682 25.1334,79.7102 25.129,79.7483 25.1394,79.8261 25.1074,79.8439 25.0948,79.8661 25.1409,79.8705 25.1696,79.854 25.2297,79.881 25.2499,79.9405 25.2475,79.9487 25.2681,80.003 25.2664,80.0002 25.288,80.0207 25.3019,80.0284 25.3412,80.076 25.3401,80.0895 25.3568,80.1338 25.3398,80.1449 25.3558,80.1939 25.3806,80.1959 25.4015,80.253 25.4024,80.2802 25.4208,80.3165 25.3866,80.3094 25.3538,80.3223 25.3336,80.3132 25.2842,80.3534 25.2752,80.3565 25.2613,80.3885 25.2368,80.4318 25.1781,80.4183 25.1633,80.3597 25.1435,80.3265 25.1012,80.3127 25.0694,80.2875 25.0578,80.2935 25.0174,80.3301 24.9935,80.3424 25.0111,80.3757 25.0177,80.3922 25.0642,80.4114 25.0566,80.4471 25.075,80.4652 25.0631,80.4763 25.0317,80.4439 25.0358,80.4564 24.9816,80.4798 24.9791,80.4801 25.0076,80.531 25.0012,80.544 25.0336,80.5089 25.042,80.5014 25.0846,80.5563 25.0644,80.5707 25.0806,80.5935 25.0792,80.6034 25.1211,80.637 25.122,80.6223 25.0888,80.6753 25.0784,80.6802 25.0487,80.7342 25.0679,80.7842 25.0586,80.7838 25.0805,80.7269 25.0989,80.7244 25.1253,80.7581 25.1381,80.8394 25.1385,80.8564 25.1864,80.8783 25.1854,80.9138 25.1603,80.8724 25.119,80.8776 25.0672,80.8363 25.0273,80.8575 24.9992,80.8106 24.954,80.8274 24.9323,80.8825 24.9373,80.904 24.9544,80.9454 24.9693,80.9606 24.9359,81.0218 24.937,81.0339 24.9519,81.0836 24.9488,81.097 24.9213,81.135 24.8902,81.1602 24.9162,81.1646 24.9444,81.1835 24.9515,81.2061 24.9315,81.2276 25.0034,81.2694 25.0668,81.2532 25.1051,81.2839 25.1633,81.3318 25.1657,81.3597 25.1599,81.3772 25.1357,81.4071 25.1198,81.4322 25.1321,81.4789 25.0741,81.5067 25.0959,81.488 25.1149,81.5092 25.147,81.5267 25.1374,81.5337 25.1814,81.5781 25.1898,81.6181 25.1664,81.6264 25.1432,81.6031 25.1334,81.6119 25.1081,81.606 25.0769,81.624 25.0521,81.6638 25.073,81.6864 25.0586,81.689 25.0398,81.753 25.0346,81.8056 25.0026,81.8412 25.0158,81.9063 24.9766,81.9174 24.9208,81.9038 24.8907,81.9351 24.8681,81.9415 24.8453,81.9856 24.8374,82.0155 24.8467,82.0469 24.8296,82.0986 24.812,82.1316 24.7842,82.2168 24.7941,82.2095 24.7712,82.2461 24.7327,82.2571 24.6679,82.287 24.6776,82.3038 24.6544,82.3043 24.6139,82.3503 24.615,82.3845 24.5916,82.4212 24.5928,82.4094 24.6254,82.4181 24.6405,82.406 24.6813,82.4395 24.6999,82.4617 24.6703,82.5236 24.6758,82.5396 24.6477,82.5809 24.6593,82.6058 24.675,82.672 24.6957,82.7004 24.6759,82.6993 24.6485,82.7741 24.6368,82.7739 24.5945,82.8016 24.5934,82.8059 24.5498,82.7801 24.5411,82.7225 24.5544,82.7236 24.5148,82.7444 24.5001,82.7313 24.4742,82.7365 24.4254,82.7168 24.3984,82.7192 24.3729,82.7556 24.369,82.7786 24.2951,82.7627 24.2745,82.7567 24.2337,82.7373 24.2203,82.7463 24.1662,82.7228 24.1346,82.6771 24.1522,82.6644 24.1287,82.72 24.0774,82.7761 24.0724,82.7607 24.0085,82.8041 24.0029,82.8109 23.9615,82.7868 23.9392,82.7482 23.9188,82.7076 23.9229,82.6619 23.9072,82.6537 23.8866,82.6594 23.8539,82.6034 23.8214,82.5649 23.8239,82.5282 23.782,82.5009 23.7838,82.4691 23.8093,82.3999 23.799,82.3825 23.8083,82.3562 23.8009,82.2975 23.8062,82.2588 23.8211,82.2255 23.8204,82.1801 23.8351,82.1538 23.8152,82.1267 23.8205,82.0671 23.818,82.0451 23.8402,82.0067 23.861,81.9579 23.8523,81.9204 23.8679,81.8947 23.8361,81.8384 23.8214,81.8239 23.8081,81.7698 23.8181,81.725 23.8414,81.6907 23.8845,81.6888 23.9059,81.6588 23.9163,81.6103 23.9037,81.6033 23.8854,81.6119 23.8373,81.6363 23.8347,81.6515 23.7996,81.6437 23.7707,81.6758 23.7584,81.6933 23.7194,81.6833 23.6913,81.6564 23.6798,81.6532 23.6595,81.6201 23.6563,81.6078 23.6111,81.5785 23.5864,81.584 23.5539,81.6131 23.5498,81.6242 23.4931,81.6543 23.4976,81.6625 23.5264,81.7004 23.5217,81.7256 23.5568,81.7468 23.5692,81.7688 23.5473,81.8055 23.5484,81.8207 23.5146,81.8785 23.5118,81.9155 23.5337,81.9557 23.4913,81.9835 23.4344,82.0207 23.3917,82.1051 23.3974,82.1192 23.3521,82.1466 23.3597,82.1694 23.3328,82.1968 23.3219,82.1974 23.2811,82.1801 23.2704,82.1469 23.2241,82.1499 23.1639,82.1574 23.1377,82.1393 23.1127,82.116 23.1062,82.0679 23.1167,82.0344 23.0805,81.9937 23.084,81.9487 23.0768,81.9215 23.0403,81.9494 22.9811,81.9483 22.9632,81.8683 22.9103,81.8663 22.8917,81.7781 22.8718,81.7643 22.8287,81.7801 22.8108,81.7798 22.7818,81.7934 22.7682,81.7569 22.7124,81.7745 22.6794,81.7577 22.6471,81.7392 22.6718,81.7157 22.6493,81.6852 22.65,81.6616 22.6216,81.6546 22.5637,81.6324 22.5626,81.6283 22.5411,81.6019 22.5349,81.5686 22.5501,81.5632 22.5326,81.5336 22.5376,81.4977 22.5172,81.484 22.4863,81.447 22.4932,81.4235 22.4718,81.4269 22.4533,81.4009 22.4392,81.3875 22.4591,81.3832 22.5068,81.334 22.5261,81.3082 22.4823,81.2855 22.4991,81.266 22.4934,81.2448 22.4557,81.2059 22.4462,81.1977 22.4894,81.1755 22.4876,81.1542 22.4543,81.1214 22.446,81.109 22.372,81.1214 22.3427,81.1088 22.2847,81.0925 22.2512,81.0447 22.2393,81.0208 22.2229,81.0319 22.1962,81.017 22.1327,80.9899 22.1313,81.0104 22.0979,81.0073 22.0621,80.9833 22.0503,80.9541 22.1131,80.9226 22.1197,80.9082 22.1084,80.903 22.0719,80.8772 22.0375,80.8794 22.0026,80.8548 21.9597,80.8327 21.8901,80.8471 21.8702,80.8388 21.801,80.8177 21.7598,80.8018 21.7444,80.756 21.7611,80.7336 21.728,80.7305 21.6927,80.714 21.6655,80.7302 21.6161,80.7159 21.5981,80.7368 21.5426,80.7289 21.4985,80.7352 21.4611,80.7091 21.4308,80.6992 21.3774,80.6815 21.3652,80.6642 21.3334,80.6264 21.3208,80.5894 21.3335,80.5429 21.3709,80.5275 21.3952,80.507 21.3912,80.4627 21.4004,80.4456 21.3694,80.4125 21.374,80.3956 21.4054,80.4221 21.4393,80.3902 21.4775,80.3762 21.5234,80.3307 21.5473,80.3177 21.5772,80.2988 21.5753,80.264 21.6206,80.2196 21.6209,80.2 21.637,80.1531 21.6052,80.1288 21.6119,80.0993 21.59,80.0722 21.5574,80.0325 21.5583,80.01 21.5386,79.9873 21.5366,79.9705 21.5585,79.9324 21.5555,79.9123 21.5204,79.8632 21.5309,79.8334 21.5459,79.7897 21.5871,79.7349 21.6039,79.6605 21.5769,79.6568 21.5598,79.6218 21.5574,79.5789 21.5411,79.5401 21.5427,79.5425 21.5689,79.5123 21.5837,79.5153 21.6348,79.4901 21.6743,79.4149 21.6911,79.3928 21.6735,79.3178 21.688,79.2908 21.6884,79.2593 21.7192,79.2225 21.6935,79.232 21.6586,79.2227 21.6484,79.1542 21.6583,79.145 21.6386,79.1092 21.6247,79.0842 21.6048,79.0129 21.5994,78.9786 21.6159,78.9492 21.5927,78.9171 21.588,78.9151 21.551,78.9405 21.51,78.936 21.4877,78.9028 21.4988,78.8857 21.4852,78.8587 21.4929,78.8096 21.4912,78.7889 21.4834,78.7513 21.491,78.729 21.464,78.6871 21.4801,78.5859 21.4868,78.5684 21.5123,78.5175 21.5273,78.4827 21.5038,78.4365 21.5022,78.4203 21.5706,78.425 21.5993,78.3786 21.6118,78.3698 21.576,78.3391 21.5843,78.3231 21.5736,78.2826 21.5866,78.2724 21.5645,78.2243 21.5532,78.1867 21.5588,78.1755 21.5466,78.1737 21.4978,78.0754 21.439,78.0074 21.4167,77.986 21.4008,77.9456 21.3982,77.9088 21.3789,77.8491 21.3929,77.8035 21.4114,77.7938 21.3886,77.7473 21.3824,77.742 21.3675,77.6534 21.3921,77.6042 21.3921,77.6042 21.3666,77.5621 21.3728,77.5604 21.3982,77.5314 21.4184,77.5156 21.3763,77.4884 21.3771,77.4708 21.4553,77.4419 21.4719,77.4428 21.4886,77.4208 21.5334,77.4542 21.5535,77.5077 21.5527,77.57 21.5281,77.5981 21.5299,77.6104 21.5456,77.5744 21.5588,77.5762 21.5895,77.5612 21.6659,77.5402 21.7054,77.4761 21.7703,77.4041 21.7554,77.3453 21.7607,77.3243 21.7545,77.2883 21.7615,77.29 21.7335,77.2585 21.7133,77.2251 21.7168,77.2082 21.6915,77.1684 21.7127,77.1296 21.7219,77.0863 21.7147,77.0504 21.7462,77.0355 21.7417,77.048 21.7024,76.996 21.672,76.9744 21.6517,76.9271 21.6239,76.8983 21.5961,76.8496 21.6116,76.8296 21.5882,76.7974 21.5957,76.781 21.5697,76.7881 21.5351,76.764 21.5213,76.7953 21.4917,76.7825 21.4602,76.7469 21.4431,76.74 21.41,76.696 21.3863,76.6249 21.3351,76.6646 21.2803,76.6646 21.2433,76.6365 21.2197,76.6361 21.1948,76.595 21.1892,76.5759 21.197,76.5319 21.1808,76.4947 21.1906,76.481 21.1802,76.4807 21.1485,76.4613 21.1321,76.4537 21.1056,76.4134 21.1029,76.3789 21.072,76.2824 21.0711,76.2732 21.0882,76.1727 21.0877,76.1399 21.1341,76.1116 21.164,76.1692 21.1688,76.1631 21.2202,76.1399 21.2379,76.1594 21.2532,76.1007 21.3661,76.0596 21.3549,76.0306 21.3691,75.9877 21.3727,75.9722 21.3881,75.9079 21.3851,75.8755 21.3934,75.862 21.3806,75.7651 21.3818,75.7391 21.3902,75.6874 21.3837,75.6723 21.3751,75.6185 21.379,75.5435 21.3683,75.5196 21.3866,75.4276 21.3908,75.3831 21.3794,75.3502 21.3902,75.3101 21.3915,75.3002 21.4076,75.2536 21.4013,75.2204 21.4086,75.1122 21.4582,75.0901 21.5152,75.0533 21.5651,75.0258 21.5716,74.9858 21.5932,74.9321 21.6053,74.9024 21.6289,74.8615 21.6334,74.8198 21.6086,74.7663 21.6138,74.6886 21.6319,74.6493 21.6535,74.5835 21.6621,74.5571 21.6786,74.5449 21.7178,74.5068 21.7247,74.513 21.7667,74.5002 21.7896,74.5118 21.8337,74.5163 21.8849,74.5288 21.8997,74.5123 21.9326,74.4815 21.9589,74.4507 21.9627,74.439 21.9761,74.4522 22.0038,74.4323 22.0303,74.3865 22.0189,74.3482 21.9765,74.3111 21.9729,74.2912 21.9412,74.1978 21.9253,74.1434 21.9551))&quot;</value>
+                                <value>23.5</value>
+                                <value>78.5</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Karnataka holds 3917 rap victims' captured-sheet='Dashboard 1' id='3'>
+                    <capturedDeltas>
+                      <worksheet name='Causes of rape'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Karnataka&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap cases reported from 2001 to 2010'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Karnataka&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap victims from different states of India from 2001 - 2010'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]' field-type='quantitative' max='5475301.6988899074' min='246334.23959093221' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]' field-type='quantitative' max='13348193.003954012' min='6234365.3342627594' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Geometry (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>&quot;Karnataka&quot;</value>
+                                <value>3917</value>
+                                <value>&quot;MULTIPOLYGON(((74.0877 14.8983,74.1554 14.9393,74.1768 14.9591,74.2043 14.926,74.2151 14.9427,74.2522 14.9562,74.2664 14.9784,74.2519 14.9961,74.2955 15.04,74.2731 15.1011,74.2858 15.1227,74.2823 15.1454,74.3131 15.1781,74.304 15.2205,74.2616 15.2401,74.2708 15.2777,74.3214 15.2824,74.3365 15.2928,74.3171 15.3263,74.3203 15.3687,74.2761 15.3898,74.2697 15.4181,74.2743 15.4517,74.2516 15.4914,74.2821 15.531,74.2623 15.567,74.2617 15.6182,74.2438 15.6244,74.2513 15.6556,74.2215 15.6673,74.1665 15.6696,74.1524 15.6501,74.1185 15.6505,74.1299 15.6871,74.1269 15.7107,74.1589 15.7526,74.2039 15.7587,74.2107 15.7808,74.2448 15.7453,74.2656 15.7549,74.2869 15.7419,74.3448 15.7656,74.3662 15.7861,74.3677 15.8296,74.3395 15.8517,74.3684 15.8913,74.3959 15.8517,74.4058 15.8616,74.389 15.908,74.4324 15.9545,74.4439 16.0041,74.4637 16.0422,74.4311 16.0594,74.3723 16.0391,74.3745 16.0795,74.4111 16.0962,74.4279 16.113,74.4903 16.1069,74.4837 16.143,74.5028 16.225,74.481 16.2496,74.4165 16.2594,74.4145 16.2828,74.3852 16.2779,74.3783 16.2937,74.3391 16.2946,74.3212 16.3715,74.3643 16.3991,74.3367 16.4287,74.3298 16.4565,74.3072 16.4543,74.2887 16.48,74.2632 16.538,74.3028 16.5295,74.3253 16.5563,74.3465 16.5556,74.3844 16.5336,74.3982 16.5843,74.4395 16.6052,74.4648 16.6085,74.458 16.6554,74.4712 16.6642,74.4924 16.6319,74.543 16.6363,74.543 16.5957,74.567 16.585,74.5685 16.554,74.634 16.5793,74.656 16.6036,74.6892 16.6159,74.6533 16.6388,74.6668 16.6665,74.6905 16.6797,74.6873 16.7115,74.7476 16.7255,74.7746 16.7523,74.8462 16.7629,74.85 16.7722,74.9201 16.7721,74.9117 16.7866,74.9079 16.859,74.9468 16.8826,74.9628 16.9085,74.9247 16.926,74.933 16.9428,74.9789 16.9307,74.9971 16.9463,75.061 16.9414,75.0885 16.9519,75.09 16.9252,75.1337 16.898,75.1377 16.8749,75.1692 16.8658,75.1838 16.8436,75.2279 16.8429,75.2389 16.8683,75.2668 16.862,75.2828 16.878,75.281 16.954,75.3455 16.9555,75.3925 16.9785,75.4251 16.9658,75.4614 16.9851,75.4845 16.9726,75.4903 16.9463,75.528 16.9699,75.5687 16.9656,75.5679 17.0083,75.6087 17.0047,75.6066 16.9734,75.6336 16.9689,75.6424 16.9524,75.6703 16.9614,75.6721 17.0378,75.6456 17.0506,75.6789 17.074,75.6729 17.1162,75.6259 17.1692,75.662 17.2154,75.6539 17.274,75.6371 17.2745,75.6051 17.3073,75.6111 17.3444,75.5799 17.3543,75.5763 17.3851,75.613 17.3916,75.609 17.4203,75.6355 17.4764,75.6783 17.4508,75.6834 17.4179,75.714 17.4084,75.7336 17.4204,75.7658 17.406,75.7786 17.377,75.8143 17.3742,75.8191 17.4182,75.8522 17.4094,75.8607 17.3851,75.8946 17.4012,75.8904 17.3588,75.9308 17.3222,75.9925 17.3369,76.0104 17.3526,76.0627 17.3529,76.0721 17.3351,76.0988 17.3644,76.1198 17.3693,76.1725 17.3357,76.1784 17.3573,76.2282 17.3672,76.2681 17.3588,76.2756 17.3344,76.3178 17.3321,76.3391 17.3544,76.3549 17.312,76.38 17.314,76.4085 17.3703,76.3603 17.3791,76.3739 17.4368,76.3324 17.4336,76.3299 17.472,76.3536 17.4758,76.3311 17.5962,76.4185 17.6059,76.4275 17.645,76.486 17.6616,76.4856 17.7153,76.523 17.7172,76.5227 17.7601,76.563 17.7651,76.5744 17.7012,76.599 17.726,76.6125 17.7717,76.6325 17.7561,76.6358 17.729,76.6561 17.7212,76.6668 17.6886,76.6901 17.7022,76.7251 17.7384,76.7182 17.7553,76.7383 17.7804,76.775 17.7995,76.7916 17.829,76.7384 17.8774,76.741 17.9007,76.77 17.8982,76.7771 17.8785,76.8056 17.8716,76.8522 17.9011,76.8793 17.8947,76.9149 17.94,76.9221 17.9896,76.9198 18.0357,76.9457 18.0517,76.9551 18.1118,76.9266 18.1176,76.9276 18.1461,76.9453 18.1565,76.9557 18.1859,76.9939 18.1882,77.0011 18.1683,77.0269 18.1644,77.0514 18.1748,77.0648 18.1507,77.1008 18.1582,77.1154 18.1725,77.0974 18.197,77.1407 18.2089,77.1654 18.2565,77.1691 18.2833,77.2086 18.2802,77.2119 18.3154,77.228 18.3421,77.2402 18.4106,77.3349 18.4498,77.3717 18.4503,77.3737 18.4024,77.4061 18.3985,77.3959 18.3692,77.3626 18.3102,77.412 18.3023,77.4282 18.3117,77.4509 18.2688,77.4715 18.2619,77.5179 18.2852,77.5224 18.3085,77.5538 18.2901,77.6036 18.2825,77.5765 18.2469,77.5871 18.222,77.5774 18.1768,77.5995 18.1528,77.5953 18.0859,77.569 18.0794,77.5462 18.0577,77.5523 18.0354,77.5786 18.0321,77.5859 18.0142,77.6472 17.9993,77.6489 17.9498,77.621 17.9403,77.6187 17.9045,77.5904 17.908,77.5723 17.8426,77.5297 17.8259,77.5081 17.7851,77.5629 17.7616,77.5473 17.7267,77.5243 17.7258,77.4527 17.6932,77.4555 17.6328,77.4466 17.5839,77.5139 17.5479,77.5318 17.5747,77.5526 17.5522,77.5885 17.5616,77.5952 17.5365,77.66 17.5247,77.6902 17.5079,77.6882 17.4757,77.653 17.4838,77.6151 17.4707,77.6147 17.4471,77.5781 17.4583,77.5768 17.433,77.5375 17.4434,77.5147 17.4298,77.5241 17.365,77.4778 17.3613,77.4604 17.3489,77.4399 17.2936,77.4543 17.2738,77.3839 17.2247,77.3946 17.196,77.3735 17.1917,77.3681 17.1691,77.3789 17.1426,77.4634 17.0963,77.4964 17.0404,77.5017 17.0155,77.4727 16.9884,77.468 16.9165,77.4597 16.9105,77.461 16.8267,77.4757 16.7996,77.4703 16.7797,77.4413 16.7669,77.4284 16.7175,77.4705 16.7166,77.4696 16.6852,77.4206 16.6676,77.4378 16.6418,77.4752 16.6474,77.4576 16.6121,77.4262 16.5708,77.4193 16.5223,77.3849 16.5158,77.3712 16.4891,77.3312 16.484,77.3018 16.4944,77.2598 16.4546,77.284 16.4133,77.3466 16.3853,77.3745 16.3856,77.4229 16.3663,77.4429 16.3803,77.4732 16.3805,77.5221 16.3697,77.5593 16.3444,77.5881 16.3339,77.593 16.2934,77.5685 16.3028,77.5278 16.2744,77.5068 16.2719,77.4929 16.2525,77.4983 16.2152,77.4916 16.1212,77.5057 16.0715,77.4957 16.0377,77.5216 15.9627,77.5137 15.9267,77.4618 15.9362,77.4357 15.9485,77.3757 15.9408,77.3591 15.9506,77.2868 15.9536,77.2572 15.9621,77.1876 15.9569,77.1109 15.9345,77.0765 15.9127,77.0402 15.8703,77.0256 15.8379,77.0678 15.8273,77.0661 15.783,77.0502 15.7565,77.051 15.7296,77.0795 15.7261,77.0799 15.6959,77.129 15.6631,77.1203 15.6301,77.0866 15.6567,77.031 15.6347,77.0276 15.5804,77.0314 15.5057,76.9995 15.5043,76.9949 15.4806,77.007 15.4522,77.0303 15.4369,77.029 15.4059,77.0459 15.3936,77.042 15.3611,77.0841 15.3282,77.107 15.3368,77.1211 15.2971,77.1514 15.293,77.1555 15.2721,77.1273 15.2272,77.1489 15.2219,77.1683 15.1755,77.1527 15.1124,77.135 15.1044,77.1256 15.0619,77.1104 15.0343,77.0854 15.0273,77.0818 15.007,77.0496 15.0103,77.045 15.0353,77.0047 15.0348,76.9756 15.0162,76.9435 15.0334,76.8813 15.0351,76.8668 15.0598,76.8059 15.0927,76.7743 15.0707,76.7871 15.0373,76.7829 15.0128,76.7587 14.9869,76.7689 14.976,76.8189 14.9704,76.8292 14.9594,76.8639 14.9704,76.8693 14.9516,76.8625 14.8946,76.8387 14.7905,76.7853 14.7843,76.8011 14.7366,76.7753 14.678,76.7654 14.6002,76.7812 14.5945,76.8062 14.5322,76.8476 14.5134,76.8679 14.4749,76.9068 14.4894,76.975 14.4842,76.9505 14.413,76.9175 14.4184,76.8876 14.3984,76.8828 14.355,76.9043 14.3237,76.946 14.3109,76.9562 14.2923,76.9283 14.2769,76.9447 14.2425,76.989 14.2465,77.0036 14.2371,77.0572 14.2438,77.0823 14.214,77.1124 14.2201,77.1202 14.2629,77.1176 14.2927,77.1371 14.3373,77.1628 14.3435,77.2002 14.3206,77.2407 14.3168,77.2852 14.3369,77.2854 14.2826,77.3637 14.273,77.359 14.2359,77.3861 14.2209,77.3908 14.2013,77.4207 14.2106,77.4104 14.2555,77.3917 14.2696,77.3805 14.3145,77.3899 14.3332,77.4301 14.3294,77.4497 14.3145,77.4497 14.2855,77.4871 14.292,77.5031 14.278,77.4965 14.2322,77.5096 14.1882,77.5077 14.1601,77.4703 14.1714,77.3941 14.1734,77.3843 14.1396,77.402 14.1115,77.3627 14.0657,77.3422 14.06,77.3356 14.0273,77.3899 14.017,77.3777 13.9843,77.4283 13.9837,77.4398 13.9643,77.4161 13.9244,77.432 13.9094,77.4048 13.8879,77.3936 13.9057,77.359 13.9029,77.3496 13.9141,77.3674 13.9543,77.3515 13.9609,77.3581 13.9899,77.3347 13.9992,77.3225 14.031,77.3001 14.0217,77.2617 14.0292,77.2477 14.0142,77.1981 14.011,77.1691 14.0158,77.1398 14.0059,77.1278 14.0485,77.0746 14.0461,77.0307 14.0595,77.0138 14.1073,77.0178 14.1819,76.9652 14.1826,76.9212 14.1639,76.895 14.1657,76.8866 14.1377,76.9306 14.1339,76.9521 14.0961,76.9755 14.0825,76.9773 14.0619,76.9409 14.0526,76.9352 14.0292,76.9951 13.9927,76.9932 13.9646,77.0409 13.9328,77.0475 13.9066,77.0232 13.9001,77.0119 13.8561,76.9736 13.8224,76.997 13.757,77.0157 13.742,77.025 13.7775,77.0391 13.7775,77.0681 13.7467,77.1008 13.7682,77.1289 13.7579,77.1756 13.7654,77.1607 13.8056,77.1672 13.8318,77.1485 13.8458,77.1691 13.8664,77.1663 13.9169,77.1878 13.9197,77.1813 13.8683,77.2163 13.8677,77.2244 13.8976,77.2589 13.8641,77.258 13.8472,77.3132 13.8659,77.3263 13.8341,77.3674 13.8547,77.3814 13.8379,77.4333 13.8441,77.4184 13.8143,77.461 13.786,77.4656 13.7223,77.4507 13.7055,77.4638 13.6847,77.4923 13.6884,77.4932 13.7142,77.5144 13.7138,77.547 13.752,77.5643 13.7245,77.6223 13.7684,77.6775 13.7857,77.7042 13.7689,77.7364 13.81,77.7865 13.8217,77.7818 13.84,77.8117 13.8489,77.8342 13.8676,77.8141 13.9265,77.8384 13.9349,77.8922 13.9401,77.8973 13.92,77.9198 13.9059,77.9586 13.9368,77.9862 13.9027,77.9567 13.8933,77.9502 13.876,77.9563 13.8381,77.9787 13.8344,77.9946 13.8708,78.0465 13.8624,78.0493 13.8956,78.0788 13.8839,78.0834 13.8626,78.1125 13.8627,78.1261 13.8304,78.1153 13.8131,78.1275 13.7854,78.0938 13.7414,78.1186 13.7194,78.1144 13.6942,78.0725 13.6978,78.089 13.6595,78.1646 13.6582,78.1694 13.6328,78.2033 13.6255,78.2143 13.5825,78.2345 13.5901,78.3191 13.588,78.3897 13.5818,78.3969 13.5637,78.3733 13.527,78.3748 13.492,78.3659 13.4567,78.3734 13.4248,78.374 13.3737,78.3808 13.3318,78.4107 13.3157,78.4271 13.327,78.4496 13.3071,78.4671 13.3154,78.5048 13.292,78.5624 13.2975,78.5768 13.2759,78.5648 13.2495,78.5769 13.2191,78.5568 13.2057,78.5693 13.1747,78.5271 13.1409,78.535 13.1088,78.5056 13.098,78.5026 13.0626,78.456 13.0507,78.4485 13.0294,78.4701 12.9897,78.4619 12.976,78.4321 12.9791,78.4107 12.9425,78.418 12.902,78.3931 12.9064,78.3514 12.9382,78.3463 12.9133,78.3225 12.9,78.3146 12.8594,78.2729 12.8688,78.2539 12.8623,78.2528 12.8318,78.231 12.7592,78.1619 12.7751,78.0843 12.8121,78.086 12.8273,78.0566 12.8504,78.0245 12.8452,77.9911 12.8051,77.98 12.8311,77.9473 12.8553,77.9397 12.8215,77.9169 12.8282,77.9387 12.8665,77.9289 12.8885,77.8866 12.8696,77.8324 12.8665,77.8085 12.8471,77.7977 12.7924,77.7794 12.7679,77.785 12.742,77.7401 12.6732,77.6859 12.6573,77.6746 12.6767,77.6427 12.6791,77.6 12.6664,77.6075 12.6301,77.5916 12.614,77.5806 12.5557,77.5904 12.5159,77.6349 12.487,77.6298 12.4211,77.6165 12.3645,77.5916 12.358,77.5689 12.3094,77.5279 12.2722,77.5019 12.2802,77.4751 12.2551,77.4821 12.2317,77.4727 12.2098,77.5197 12.1942,77.6122 12.2049,77.6556 12.1983,77.734 12.1759,77.7549 12.1319,77.7743 12.1192,77.757 12.0806,77.7274 12.0608,77.6975 12.0169,77.6628 11.9488,77.537 11.9314,77.4929 11.9407,77.4909 11.9078,77.4629 11.9004,77.4664 11.8491,77.447 11.7892,77.4271 11.7664,77.3896 11.7883,77.3678 11.7888,77.3326 11.7723,77.2541 11.8096,77.2266 11.7952,77.1981 11.7951,77.1114 11.7695,77.117 11.7306,77.0853 11.7344,77.0622 11.7604,77.065 11.7818,77.0366 11.7904,77.0119 11.8142,76.9636 11.7792,76.9028 11.7937,76.8932 11.7459,76.8619 11.7082,76.8361 11.6537,76.856 11.5977,76.8237 11.6066,76.6722 11.6144,76.615 11.6066,76.5654 11.6167,76.542 11.6809,76.5056 11.7003,76.4632 11.6675,76.4314 11.6637,76.4156 11.6734,76.4098 11.7035,76.4273 11.7242,76.4138 11.7567,76.3532 11.7367,76.3179 11.751,76.3055 11.7856,76.2839 11.8111,76.2254 11.8055,76.2102 11.8258,76.208 11.86,76.1915 11.8697,76.1566 11.8691,76.1217 11.8479,76.1143 11.8621,76.1125 11.9764,76.0743 11.9665,76.0329 11.9384,75.9888 11.9286,75.9574 11.9401,75.9351 11.9361,75.8611 11.9547,75.8447 11.9797,75.819 11.9803,75.8207 12.0072,75.8027 12.0191,75.7929 12.0516,75.8004 12.0766,75.7179 12.0864,75.686 12.1098,75.6523 12.1013,75.6352 12.1491,75.5935 12.1489,75.5323 12.199,75.5065 12.2667,75.4844 12.2898,75.4304 12.2961,75.4116 12.3465,75.4224 12.3753,75.3731 12.4007,75.373 12.4562,75.3974 12.4477,75.4312 12.4647,75.4243 12.4978,75.3795 12.4922,75.3552 12.4593,75.3333 12.4955,75.3075 12.5005,75.2844 12.5244,75.2702 12.5561,75.3064 12.5758,75.3046 12.6032,75.2845 12.6166,75.2271 12.566,75.2171 12.5768,75.2065 12.6284,75.1537 12.6211,75.1449 12.6383,75.167 12.6667,75.1146 12.6826,75.1018 12.6979,75.0697 12.6618,75.0466 12.6643,75.0423 12.7175,75.0039 12.7133,74.9868 12.7385,75.0118 12.7687,75.0065 12.7924,74.9738 12.7761,74.9376 12.7815,74.8673 12.7514,74.8307 12.8388,74.8213 12.8522,74.775 13.0763,74.7204 13.2844,74.7129 13.3242,74.6953 13.3441,74.6967 13.4162,74.7144 13.4413,74.6905 13.4583,74.6852 13.515,74.6674 13.6348,74.6448 13.6814,74.6264 13.7907,74.6071 13.8673,74.5696 13.9457,74.5496 13.9472,74.5144 13.9868,74.4736 14.1669,74.4625 14.2005,74.4428 14.227,74.4437 14.2751,74.4207 14.3005,74.3924 14.4174,74.3589 14.5002,74.356 14.5217,74.3107 14.5208,74.3127 14.5453,74.2835 14.6306,74.2812 14.6761,74.2627 14.7173,74.2371 14.7471,74.2057 14.7367,74.1513 14.751,74.1433 14.777,74.1206 14.7809,74.1233 14.8408,74.1139 14.8444,74.0877 14.8983)),((74.2596 15.8253,74.288 15.8288,74.3073 15.7957,74.2768 15.7865,74.2621 15.7943,74.2596 15.8253)))&quot;</value>
+                                <value>15.0527</value>
+                                <value>75.534400000000005</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='AndraPradesh hold 10,696 victims and hold highest record in south India' captured-sheet='Dashboard 1' id='4'>
+                    <capturedDeltas>
+                      <worksheet name='Causes of rape'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Andhra Pradesh&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap cases reported from 2001 to 2010'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Andhra Pradesh&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap victims from different states of India from 2001 - 2010'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]' field-type='quantitative' max='5475301.6988899074' min='246334.23959093221' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]' field-type='quantitative' max='13348193.003954012' min='6234365.3342627594' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Geometry (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>&quot;Andhra Pradesh&quot;</value>
+                                <value>10696</value>
+                                <value>&quot;MULTIPOLYGON(((77.5137 15.9267,77.6151 15.9177,77.6393 15.8971,77.6976 15.8832,77.7154 15.895,77.8117 15.8741,77.8545 15.883,77.8838 15.9066,77.9369 15.8838,77.9802 15.8819,78.0123 15.8583,78.0274 15.9005,78.0914 15.8387,78.1337 15.8367,78.1369 15.8544,78.1743 15.8538,78.1893 15.8862,78.1823 15.9063,78.2495 15.9373,78.2638 16.0259,78.3054 16.0108,78.3279 16.038,78.3652 16.047,78.4105 16.076,78.4583 16.0736,78.5579 16.0457,78.5902 16.0663,78.6015 16.0851,78.6448 16.0823,78.6879 16.0305,78.7322 16.0119,78.7851 16.0222,78.8197 16.0511,78.8423 16.0891,78.833 16.1417,78.8476 16.1503,78.8755 16.1394,78.889 16.0892,78.9206 16.1026,78.9245 16.1321,78.9045 16.1774,78.9328 16.2006,78.9923 16.2166,79.0082 16.2394,79.0537 16.2383,79.1035 16.2243,79.1215 16.2329,79.1547 16.2098,79.2079 16.2217,79.2231 16.2372,79.2341 16.3244,79.2314 16.3451,79.2092 16.3576,79.2105 16.4416,79.2343 16.4621,79.2152 16.4957,79.2588 16.5614,79.3172 16.5776,79.3776 16.5841,79.4159 16.5801,79.4534 16.622,79.4972 16.6347,79.5349 16.6304,79.5791 16.6505,79.6066 16.672,79.6319 16.6586,79.662 16.6888,79.6865 16.6974,79.7239 16.6897,79.7491 16.7224,79.7799 16.7313,79.821 16.6919,79.8404 16.7047,79.8684 16.702,79.8874 16.6837,79.897 16.645,79.9135 16.6323,79.9492 16.6341,80.0011 16.7031,80.0321 16.7175,80.0553 16.7476,80.0536 16.766,80.0713 16.8149,80.0481 16.8299,80.0471 16.8496,80.0129 16.853,80.0015 16.8649,80.018 16.9126,80.04 16.9172,80.0556 16.9701,80.0918 16.9634,80.0976 16.9889,80.1406 16.9881,80.1702 17.0152,80.1989 17.022,80.2643 16.9944,80.2803 17.005,80.3053 16.9719,80.324 16.9049,80.3206 16.8766,80.3395 16.8605,80.3715 16.8518,80.3745 16.8278,80.3954 16.8219,80.4063 16.8474,80.4627 16.818,80.4634 16.796,80.4952 16.7807,80.5472 16.7748,80.5695 16.7653,80.5865 16.8055,80.5649 16.8283,80.5704 16.8688,80.5932 16.8788,80.5902 16.9198,80.5797 16.9362,80.5455 16.9557,80.5284 16.9471,80.4967 16.9557,80.4832 16.9284,80.4562 16.9502,80.3706 16.9749,80.3911 17.0082,80.4073 17.0127,80.3893 17.0641,80.4112 17.092,80.4399 17.0365,80.4722 17.0444,80.5038 17.0683,80.5034 17.0984,80.5186 17.1193,80.5402 17.1194,80.5824 17.1501,80.6708 17.1015,80.6533 17.0725,80.6741 17.0655,80.7096 17.0816,80.7406 17.077,80.8396 17.0498,80.8759 17.0703,80.8828 17.1602,80.91 17.1516,80.9271 17.1812,80.918 17.2115,80.9412 17.2193,80.9666 17.2006,81.0015 17.1888,81.0341 17.1907,81.0543 17.2209,81.1032 17.2196,81.1739 17.2305,81.186 17.2483,81.1769 17.292,81.1904 17.3244,81.2739 17.3156,81.3022 17.3418,81.328 17.3822,81.3505 17.3813,81.3778 17.3626,81.4222 17.3682,81.445 17.3854,81.4882 17.4356,81.5263 17.507,81.5022 17.5563,81.5293 17.581,81.5235 17.6213,81.5483 17.6425,81.5659 17.6793,81.571 17.7227,81.5937 17.7461,81.6106 17.7444,81.6371 17.7766,81.6979 17.7806,81.7172 17.8121,81.7802 17.8436,81.8022 17.8397,81.8034 17.8722,81.7601 17.9001,81.7895 17.92,81.813 17.9508,81.8432 17.9548,81.964 17.9991,81.9941 18.0265,82.0086 18.0569,82.0336 18.0685,82.0631 18.0543,82.0782 18.0743,82.1033 18.0591,82.1704 18.0507,82.1833 18.0309,82.2243 18.0005,82.2566 17.9926,82.2753 18.0205,82.2733 18.0555,82.2916 18.0679,82.3105 18.0531,82.3456 18.0589,82.3531 18.0735,82.3362 18.1266,82.374 18.1471,82.3554 18.1707,82.317 18.1836,82.313 18.2032,82.3392 18.2235,82.3343 18.2507,82.3465 18.2794,82.3761 18.2801,82.394 18.2965,82.3928 18.3253,82.3643 18.318,82.3497 18.3292,82.3867 18.3677,82.3575 18.3847,82.3496 18.4083,82.4374 18.4925,82.4656 18.5325,82.4827 18.537,82.5057 18.5131,82.5269 18.5153,82.5322 18.4585,82.5626 18.4475,82.5421 18.4013,82.598 18.3863,82.6152 18.3508,82.5853 18.3083,82.5983 18.3033,82.5965 18.2655,82.632 18.2401,82.6565 18.2521,82.6675 18.2955,82.708 18.3081,82.7172 18.3219,82.7714 18.3366,82.7906 18.3668,82.8007 18.4069,82.7839 18.4313,82.8064 18.4497,82.8723 18.4173,82.8945 18.4227,82.8923 18.3764,82.9649 18.3562,82.9892 18.3743,83.0262 18.3874,83.043 18.3748,83.0726 18.3983,83.0446 18.4201,83.0434 18.4423,83.0198 18.4511,83.0558 18.4823,83.0809 18.5251,83.0533 18.5427,83.0161 18.5972,83.028 18.6214,83.0175 18.6461,83.0488 18.6565,83.1116 18.7456,83.1183 18.771,83.1426 18.7823,83.1932 18.751,83.229 18.7525,83.2492 18.7657,83.2786 18.7671,83.2827 18.7956,83.3064 18.8078,83.3454 18.7943,83.3697 18.8347,83.3826 18.8242,83.4105 18.8391,83.4194 18.8693,83.4005 18.8752,83.3291 18.9412,83.3123 18.9947,83.3626 19.0132,83.4189 18.9994,83.4467 18.9588,83.4652 18.9592,83.4662 18.9932,83.4863 19.0313,83.4716 19.0455,83.4842 19.0741,83.5195 19.0388,83.5032 19.0191,83.5379 19.0089,83.5427 19.0401,83.5616 19.064,83.5854 19.0567,83.5861 19.0858,83.6115 19.0961,83.6025 19.1353,83.6281 19.1503,83.6636 19.0976,83.6651 19.0749,83.686 19.0578,83.7115 19.0068,83.7477 18.9935,83.784 19.0089,83.8109 18.9903,83.8224 18.959,83.8268 18.9158,83.8462 18.9153,83.8445 18.8738,83.8932 18.8196,83.9158 18.826,83.9543 18.8054,84.0108 18.8152,84.0625 18.7818,84.0895 18.7557,84.1585 18.7865,84.1863 18.7812,84.2239 18.7973,84.2534 18.783,84.2911 18.8009,84.3188 18.791,84.3394 18.8036,84.3502 18.8421,84.3931 18.8904,84.4182 18.9021,84.4352 18.9245,84.4218 18.9495,84.514 19.0451,84.561 19.0572,84.6009 19.025,84.6206 19.0648,84.6613 19.0617,84.6519 19.0939,84.6269 19.0854,84.6116 19.1015,84.617 19.1271,84.669 19.1315,84.6721 19.1535,84.7128 19.1526,84.7008 19.1271,84.7333 19.1001,84.7577 19.098,84.7479 19.0519,84.6688 18.9515,84.6042 18.8904,84.5579 18.8168,84.5521 18.7909,84.4922 18.7404,84.4538 18.6944,84.44 18.6612,84.3839 18.6104,84.3601 18.5809,84.3455 18.5475,84.2417 18.4627,84.1532 18.376,84.1296 18.3163,84.0711 18.2763,83.9398 18.2097,83.8857 18.1935,83.8696 18.1797,83.7825 18.1441,83.6689 18.0821,83.5669 18.0103,83.5613 17.988,83.531 17.9501,83.4519 17.9017,83.4554 17.8876,83.416 17.8532,83.4167 17.8234,83.3871 17.7795,83.3548 17.7572,83.3434 17.7234,83.2979 17.6945,83.2824 17.6599,83.229 17.622,83.2127 17.5909,83.1544 17.558,83.0137 17.5028,82.9906 17.472,82.7617 17.3704,82.6242 17.2984,82.5497 17.2534,82.4694 17.1963,82.4211 17.1553,82.3176 17.0571,82.2977 17.0304,82.271 16.9623,82.2518 16.9367,82.256 16.8865,82.3009 16.8648,82.3171 16.8443,82.3549 16.8511,82.354 16.8105,82.3411 16.7384,82.3444 16.7061,82.2992 16.585,82.2724 16.5601,82.1167 16.4846,82.0244 16.4348,81.9417 16.3937,81.8764 16.3811,81.7704 16.3319,81.7201 16.3136,81.6925 16.328,81.5562 16.3448,81.5396 16.3589,81.3939 16.3422,81.3329 16.3193,81.2662 16.2773,81.2456 16.2512,81.198 16.1708,81.2024 16.143,81.1837 16.0925,81.1441 16.0277,81.1407 15.9748,81.0744 15.9159,81.0019 15.8315,80.995 15.803,80.9668 15.8004,80.8987 15.8415,80.89 15.8833,80.8558 15.8202,80.8293 15.7454,80.8147 15.7434,80.7938 15.8126,80.8128 15.8305,80.7716 15.8671,80.7015 15.8804,80.662 15.8794,80.5605 15.8579,80.4916 15.833,80.4311 15.8045,80.3598 15.7605,80.3103 15.7176,80.2674 15.6621,80.2451 15.6191,80.2009 15.4646,80.1364 15.3875,80.1094 15.3436,80.0834 15.2545,80.0882 15.221,80.0829 15.1851,80.0646 15.1494,80.0499 15.0987,80.0504 15.0385,80.0697 14.9272,80.085 14.8824,80.0895 14.8056,80.1115 14.746,80.1448 14.7011,80.158 14.6469,80.1937 14.5719,80.1792 14.4998,80.1686 14.3533,80.1454 14.2941,80.1275 14.1903,80.1289 14.1349,80.1465 14.044,80.2186 13.8807,80.2433 13.8173,80.2528 13.7797,80.2399 13.7291,80.2342 13.6555,80.2465 13.6074,80.2684 13.5631,80.2413 13.4696,80.2256 13.4843,80.1776 13.4892,80.1443 13.5049,80.1129 13.5091,80.1057 13.4906,80.0806 13.4919,80.0756 13.525,80.0178 13.5461,80.0017 13.5248,80.0201 13.5009,80.008 13.4755,79.9737 13.4667,79.9767 13.4324,79.9443 13.4216,79.9483 13.3951,79.9394 13.353,79.9238 13.3579,79.8787 13.3236,79.8404 13.3158,79.8159 13.3197,79.8022 13.301,79.7581 13.2942,79.7336 13.2805,79.7973 13.2334,79.7503 13.2128,79.7336 13.2364,79.6905 13.2413,79.6905 13.2824,79.6513 13.2893,79.6179 13.2805,79.5816 13.2598,79.5591 13.2795,79.5464 13.3275,79.5062 13.3285,79.4562 13.3403,79.3906 13.3177,79.4102 13.2991,79.4307 13.2991,79.42 13.2599,79.42 13.2266,79.4347 13.2001,79.3837 13.1932,79.3582 13.1746,79.3592 13.1364,79.3102 13.1285,79.2734 13.154,79.2484 13.1393,79.2298 13.1148,79.2048 13.1021,79.1878 13.0664,79.1842 13.0287,79.1661 13.0208,79.1308 13.0356,79.0803 13.0257,79.0651 13.0498,79.0127 13.0699,78.9931 13.0885,78.9573 13.0757,78.9264 13.0797,78.8893 13.0415,78.8951 13.0922,78.8676 13.0824,78.8103 13.0878,78.7942 13.0689,78.7549 13.0559,78.7128 13.0676,78.704 13.0137,78.6606 13.0305,78.6246 12.988,78.6578 12.9302,78.6377 12.9283,78.6044 12.8402,78.6078 12.8184,78.5894 12.7763,78.5588 12.7546,78.5646 12.73,78.5586 12.696,78.537 12.687,78.5202 12.7238,78.5058 12.7242,78.502 12.6742,78.4717 12.6704,78.4702 12.6257,78.3787 12.6214,78.3022 12.6629,78.2789 12.6971,78.2481 12.7018,78.2392 12.6853,78.2127 12.6821,78.2069 12.7078,78.2389 12.7298,78.231 12.7592,78.2528 12.8318,78.2539 12.8623,78.2729 12.8688,78.3146 12.8594,78.3225 12.9,78.3463 12.9133,78.3514 12.9382,78.3931 12.9064,78.418 12.902,78.4107 12.9425,78.4321 12.9791,78.4619 12.976,78.4701 12.9897,78.4485 13.0294,78.456 13.0507,78.5026 13.0626,78.5056 13.098,78.535 13.1088,78.5271 13.1409,78.5693 13.1747,78.5568 13.2057,78.5769 13.2191,78.5648 13.2495,78.5768 13.2759,78.5624 13.2975,78.5048 13.292,78.4671 13.3154,78.4496 13.3071,78.4271 13.327,78.4107 13.3157,78.3808 13.3318,78.374 13.3737,78.3734 13.4248,78.3659 13.4567,78.3748 13.492,78.3733 13.527,78.3969 13.5637,78.3897 13.5818,78.3191 13.588,78.2345 13.5901,78.2143 13.5825,78.2033 13.6255,78.1694 13.6328,78.1646 13.6582,78.089 13.6595,78.0725 13.6978,78.1144 13.6942,78.1186 13.7194,78.0938 13.7414,78.1275 13.7854,78.1153 13.8131,78.1261 13.8304,78.1125 13.8627,78.0834 13.8626,78.0788 13.8839,78.0493 13.8956,78.0465 13.8624,77.9946 13.8708,77.9787 13.8344,77.9563 13.8381,77.9502 13.876,77.9567 13.8933,77.9862 13.9027,77.9586 13.9368,77.9198 13.9059,77.8973 13.92,77.8922 13.9401,77.8384 13.9349,77.8141 13.9265,77.8342 13.8676,77.8117 13.8489,77.7818 13.84,77.7865 13.8217,77.7364 13.81,77.7042 13.7689,77.6775 13.7857,77.6223 13.7684,77.5643 13.7245,77.547 13.752,77.5144 13.7138,77.4932 13.7142,77.4923 13.6884,77.4638 13.6847,77.4507 13.7055,77.4656 13.7223,77.461 13.786,77.4184 13.8143,77.4333 13.8441,77.3814 13.8379,77.3674 13.8547,77.3263 13.8341,77.3132 13.8659,77.258 13.8472,77.2589 13.8641,77.2244 13.8976,77.2163 13.8677,77.1813 13.8683,77.1878 13.9197,77.1663 13.9169,77.1691 13.8664,77.1485 13.8458,77.1672 13.8318,77.1607 13.8056,77.1756 13.7654,77.1289 13.7579,77.1008 13.7682,77.0681 13.7467,77.0391 13.7775,77.025 13.7775,77.0157 13.742,76.997 13.757,76.9736 13.8224,77.0119 13.8561,77.0232 13.9001,77.0475 13.9066,77.0409 13.9328,76.9932 13.9646,76.9951 13.9927,76.9352 14.0292,76.9409 14.0526,76.9773 14.0619,76.9755 14.0825,76.9521 14.0961,76.9306 14.1339,76.8866 14.1377,76.895 14.1657,76.9212 14.1639,76.9652 14.1826,77.0178 14.1819,77.0138 14.1073,77.0307 14.0595,77.0746 14.0461,77.1278 14.0485,77.1398 14.0059,77.1691 14.0158,77.1981 14.011,77.2477 14.0142,77.2617 14.0292,77.3001 14.0217,77.3225 14.031,77.3347 13.9992,77.3581 13.9899,77.3515 13.9609,77.3674 13.9543,77.3496 13.9141,77.359 13.9029,77.3936 13.9057,77.4048 13.8879,77.432 13.9094,77.4161 13.9244,77.4398 13.9643,77.4283 13.9837,77.3777 13.9843,77.3899 14.017,77.3356 14.0273,77.3422 14.06,77.3627 14.0657,77.402 14.1115,77.3843 14.1396,77.3941 14.1734,77.4703 14.1714,77.5077 14.1601,77.5096 14.1882,77.4965 14.2322,77.5031 14.278,77.4871 14.292,77.4497 14.2855,77.4497 14.3145,77.4301 14.3294,77.3899 14.3332,77.3805 14.3145,77.3917 14.2696,77.4104 14.2555,77.4207 14.2106,77.3908 14.2013,77.3861 14.2209,77.359 14.2359,77.3637 14.273,77.2854 14.2826,77.2852 14.3369,77.2407 14.3168,77.2002 14.3206,77.1628 14.3435,77.1371 14.3373,77.1176 14.2927,77.1202 14.2629,77.1124 14.2201,77.0823 14.214,77.0572 14.2438,77.0036 14.2371,76.989 14.2465,76.9447 14.2425,76.9283 14.2769,76.9562 14.2923,76.946 14.3109,76.9043 14.3237,76.8828 14.355,76.8876 14.3984,76.9175 14.4184,76.9505 14.413,76.975 14.4842,76.9068 14.4894,76.8679 14.4749,76.8476 14.5134,76.8062 14.5322,76.7812 14.5945,76.7654 14.6002,76.7753 14.678,76.8011 14.7366,76.7853 14.7843,76.8387 14.7905,76.8625 14.8946,76.8693 14.9516,76.8639 14.9704,76.8292 14.9594,76.8189 14.9704,76.7689 14.976,76.7587 14.9869,76.7829 15.0128,76.7871 15.0373,76.7743 15.0707,76.8059 15.0927,76.8668 15.0598,76.8813 15.0351,76.9435 15.0334,76.9756 15.0162,77.0047 15.0348,77.045 15.0353,77.0496 15.0103,77.0818 15.007,77.0854 15.0273,77.1104 15.0343,77.1256 15.0619,77.135 15.1044,77.1527 15.1124,77.1683 15.1755,77.1489 15.2219,77.1273 15.2272,77.1555 15.2721,77.1514 15.293,77.1211 15.2971,77.107 15.3368,77.0841 15.3282,77.042 15.3611,77.0459 15.3936,77.029 15.4059,77.0303 15.4369,77.007 15.4522,76.9949 15.4806,76.9995 15.5043,77.0314 15.5057,77.0276 15.5804,77.031 15.6347,77.0866 15.6567,77.1203 15.6301,77.129 15.6631,77.0799 15.6959,77.0795 15.7261,77.051 15.7296,77.0502 15.7565,77.0661 15.783,77.0678 15.8273,77.0256 15.8379,77.0402 15.8703,77.0765 15.9127,77.1109 15.9345,77.1876 15.9569,77.2572 15.9621,77.2868 15.9536,77.3591 15.9506,77.3757 15.9408,77.4357 15.9485,77.4618 15.9362,77.5137 15.9267),(82.1917 16.72,82.2327 16.72,82.223 16.7471,82.1917 16.72)),((80.9968 15.7638,80.9994 15.7551,80.9405 15.72,80.9022 15.753,80.8738 15.7943,80.8693 15.8215,80.8873 15.8479,80.9031 15.825,80.9521 15.8016,80.9968 15.7638)),((80.921 15.728,80.8571 15.7116,80.8371 15.717,80.8353 15.7453,80.8598 15.815,80.8728 15.7833,80.921 15.728)))&quot;</value>
+                                <value>14.9176</value>
+                                <value>78.744799999999998</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='Lakshadweep hold a victims of 7.' captured-sheet='Dashboard 1' id='5'>
+                    <capturedDeltas>
+                      <worksheet name='Causes of rape'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Lakshadweep&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap cases reported from 2001 to 2010'>
+                        <filter class='categorical' column='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Action (State)]'>
+                          <groupfilter function='member' level='[Area_Name]' member='&quot;Lakshadweep&quot;' user:ui-action-filter='[Action2]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+                        </filter>
+                      </worksheet>
+                      <worksheet name='Rap victims from different states of India from 2001 - 2010'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]' field-type='quantitative' max='3135741.437916426' min='-472070.72661896702' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]' field-type='quantitative' max='10664842.557936076' min='5756540.067455207' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                        <selection-collection>
+                          <tuple-selection>
+                            <tuple-reference>
+                              <tuple-descriptor>
+                                <pane-descriptor>
+                                  <x-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                  </x-fields>
+                                  <y-fields>
+                                    <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  </y-fields>
+                                </pane-descriptor>
+                                <columns>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Geometry (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Latitude (generated)]</field>
+                                  <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[Longitude (generated)]</field>
+                                </columns>
+                              </tuple-descriptor>
+                              <tuple>
+                                <value>&quot;Lakshadweep&quot;</value>
+                                <value>7</value>
+                                <value>&quot;POLYGON((72.7619 11.1802,72.779 11.2422,72.7904 11.2545,72.7619 11.1802))&quot;</value>
+                                <value>8.2967999999999993</value>
+                                <value>73.065700000000007</value>
+                              </tuple>
+                            </tuple-reference>
+                          </tuple-selection>
+                        </selection-collection>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='26245' hidden='true' id='6' story-point-id='1' type='text' w='25098' x='60531' y='17842'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='11'>According to the given dataset, </run>
+            <run bold='true' fontcolor='#e15759' fontsize='11'>1,90,008</run>
+            <run bold='true' fontcolor='#000000' fontsize='11'> rap victims were recorded during 2001 to 2010 accross all the states in India, where during this period Maharasthra alone holds a highest record of 29,256 rap victimes and lakshadweep holds a least records of 7 victimes.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='26245' hidden='true' id='7' story-point-id='2' type='text' w='25098' x='64764' y='17531'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='11'>Maharashtra </run>
+            <run bold='true' fontcolor='#222222' fontsize='11'> is the third-biggest state of India. Only one Indian state has more people (Uttar Pradesh). </run>
+            <run bold='true' fontcolor='#0b0080' fontsize='11'>Mumbai</run>
+            <run bold='true' fontcolor='#222222' fontsize='11'> is the </run>
+            <run bold='true' fontcolor='#0b0080' fontsize='11'>capital</run>
+            <run bold='true' fontcolor='#222222' fontsize='11'> of Maharashtra. (The name </run>
+            <run bold='true' fontcolor='#222222' fontsize='11' italic='true'>Mumbai</run>
+            <run bold='true' fontcolor='#222222' fontsize='11'> comes from the original name of the city, Mumbapuri.) </run>
+            <run bold='true' fontcolor='#0b0080' fontsize='11'>Pune</run>
+            <run bold='true' fontcolor='#222222' fontsize='11'> is the cultural and educational capital</run>
+            <run bold='true' fontcolor='#222222' fontname='sans-serif' fontsize='11'>.</run>
+            <run bold='true' fontcolor='#000000' fontsize='11'>Maharashtra from the year 2001 to 2010 there is no major drop in victimes and Incest Rape Victimes are low when comper to other rapes</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='26245' hidden='true' id='8' story-point-id='3' type='text' w='25098' x='57579' y='18983'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Karnataka is a state of diverse cultures, languages and faiths and the economic and social scenario within the state and Bangalore is a capital of Karnataka, It is really disappointto see the number of rap victimes in it, and is gradually increasing over time. when we analyze the graph whe can see the victims from 2001 to 2010 gradually increasing over time which is worst then Maharashtra</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='26245' hidden='true' id='9' story-point-id='4' type='text' w='25098' x='52559' y='17012'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>Andra Pradesh is a state of diverse cultures and the economic and social scenario , It is really disappointto see the number of rap victimes in it, and is gradually increasing over time. when we analyze the graph whe can see the victims from 2001 to 2010 gradually increasing over time and holds a record for highest record in south India</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='26245' id='10' story-point-id='5' type='text' w='25098' x='61516' y='18154'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#333333' fontsize='11'>Scattered 200–400km (124–248 miles) west of the Keralan coast, the Lakshadweep Islands are a classic coral atoll. Some speculate that the name derives from the estimates of early sailors, who imagined at least 100,000 (one lakh) of these little islets. In fact, there are only 22 , of which just 11 are inhabited – by some 60,600 people. where 7 victimes are more to consider in such place.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{E9DE65CE-375D-4290-9286-8C620297C996}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Rap victims from different states of India from 2001 - 2010'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card pane-specification-id='0' param='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{000B5A7F-4E96-4B41-A3F0-44168E2B7AF0}' />
+    </window>
+    <window class='worksheet' name='Rap cases reported from 2001 to 2010'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+          <strip size='160'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' type='color' />
+            <card param='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7936B370-CFC8-4655-AA5A-9AA80C660C4C}' />
+    </window>
+    <window class='worksheet' name='Causes of rape'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]' type='filter' />
+            <card pane-specification-id='6' param='[federated.1wc9dr914mazh41b2rfcv1g77jtn].[sum:Rape_Cases_Reported:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Area_Name:nk]</field>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Subgroup:nk]</field>
+            <field>[federated.1wc9dr914mazh41b2rfcv1g77jtn].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0681B759-4D49-49DD-864A-B2275DE84A9B}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Causes of rape'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rap cases reported from 2001 to 2010'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Rap victims from different states of India from 2001 - 2010'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{3D5DC3B1-5D52-45D0-B028-B8E52B2E6EBE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{0D92FED4-466F-44A4-AB52-2A7A61F89EED}' />
+    </window>
+  </windows>
+</workbook>
